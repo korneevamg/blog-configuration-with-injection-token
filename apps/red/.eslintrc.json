@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "blue",
+            "prefix": "red",
             "style": "kebab-case"
           }
         ]

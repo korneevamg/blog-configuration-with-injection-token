@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'blue-root',
+  selector: 'red-root',
   templateUrl: './app.component.html',
 })
 export class AppComponent {}

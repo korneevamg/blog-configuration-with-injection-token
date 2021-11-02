@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@blog-configuration-with-injection-token/color": [
+        "libs/color/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

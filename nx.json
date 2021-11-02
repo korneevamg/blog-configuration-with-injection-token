@@ -33,6 +33,16 @@
     "blue-e2e": {
       "tags": [],
       "implicitDependencies": ["blue"]
+    },
+    "color": {
+      "tags": []
+    },
+    "red": {
+      "tags": []
+    },
+    "red-e2e": {
+      "tags": [],
+      "implicitDependencies": ["red"]
     }
   }
 }

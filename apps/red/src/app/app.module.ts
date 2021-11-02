@@ -9,11 +9,11 @@ import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-const getBluePrice = (price: number) => 0.95 * price;
+const getBluePrice = (price: number) => 1.5 * price;
 
 export const APP_CONFIG: ColorConfig = {
-  productColor: 'blue',
-  productGeneralConditions: 'www.blue-products.com',
+  productColor: 'red',
+  productGeneralConditions: 'www.red-products.com',
   getPrice: getBluePrice,
 };
 
