@@ -7,3 +7,9 @@ export interface ColorConfig {
   productGeneralConditions: string;
   getPrice(category: number): number;
 }
+
+export const ORDER_ACTION = new InjectionToken<OrderAction>('OrderAction');
+
+export interface OrderAction {
+  requestAvailability: () => void;
+}

@@ -1,0 +1,12 @@
+<button (click)="requestAvailability()">Request availability</button>
+<hr />
+
+<!-- USE CASE: BRIDGE DESIGN PATTERN
+
+Our use case: we want to call methods of the projected component so that we can control it's behaviour. How does the wrapper component know, what methods are available?
+PROBLEM: How to communicate an interface definition between the wrapper component and the projected component?
+SOLUTION: InjectionToken!
+
+Tutorial: https://www.youtube.com/watch?v=2rQOu9TmuxE
+ -->
+<ng-content></ng-content>

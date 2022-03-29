@@ -1,1 +1,16 @@
+<!-- USE CASE: CONFIGURATION OF A SHARED SERVICE
+
+Our use case: we want to configure our shared component based on the app it is used in:
+- Red: red product costs X EUR. Please visit www.red-products.com for more information
+- Blue: blue product costs XX EUR. Please visit www.blue-products.com for more information
+PROBLEM: How to keep your app and shared components loosly coupled?
+SOLUTION: InjectionToken!
+
+PRO:
+- Shared configuration for everything - components, services etc.
+- Service configuration (no @Input available)
+CONTRA:
+- Input/Output is still a valid option
+- should be well documented (implicit deps)
+ -->
 <p>Infotag: {{ infoTag }}</p>

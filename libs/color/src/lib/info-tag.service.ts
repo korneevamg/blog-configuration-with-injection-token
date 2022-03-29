@@ -19,5 +19,10 @@ export class InfoService {
 
   public getProductInfo(price: number) {
     return `${this.config.productColor} product costs ${price} EUR. Please visit ${this.config.productGeneralConditions} for more information`;
+    /*     return `${this.config.productColor} product costs ${this.config.getPrice(
+      price
+    )} EUR. Please visit ${
+      this.config.productGeneralConditions
+    } for more information`; */
   }
 }
