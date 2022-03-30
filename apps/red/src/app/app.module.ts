@@ -9,12 +9,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RedOrderActionComponent } from './order-action/order-action.component';
 
-const getBluePrice = (price: number) => 1.5 * price;
+const getRedPrice = (price: number) => 1.5 * price;
 
 export const APP_CONFIG: ColorConfig = {
   productColor: 'red',
   productGeneralConditions: 'www.red-products.com',
-  getPrice: getBluePrice,
+  getPrice: getRedPrice,
 };
 
 @NgModule({
