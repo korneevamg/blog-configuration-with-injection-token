@@ -2,12 +2,11 @@ import { CommonModule } from '@angular/common';
 import { InfoService } from './info-tag.service';
 import { InfoTagComponent } from './info-tag/info-tag.component';
 import { NgModule } from '@angular/core';
-import { OrderWrapperComponent } from './order-wrapper/order-wrapper.component';
 
 @NgModule({
-  declarations: [OrderWrapperComponent, InfoTagComponent],
+  declarations: [InfoTagComponent],
   imports: [CommonModule],
   providers: [InfoService],
-  exports: [OrderWrapperComponent, InfoTagComponent],
+  exports: [InfoTagComponent],
 })
 export class InfoTagModule {}

@@ -17,12 +17,7 @@ export class InfoService {
     return `${product.color} product costs ${product.price} EUR. Please visit ${termsAndConditionsUrl} for more information`;
   }*/
 
-  public getProductInfo(price: number) {
-    //return `${this.config.productColor} product costs ${price} EUR. Please visit ${this.config.productGeneralConditions} for more information`;
-    return `${this.config.productColor} product costs ${this.config.getPrice(
-      price
-    )} EUR. Please visit ${
-      this.config.productGeneralConditions
-    } for more information`;
+  public getProductInfo() {
+    return `${this.config.productColor} product costs ${this.config.price} EUR. Please visit ${this.config.productGeneralConditions} for more information`;
   }
 }

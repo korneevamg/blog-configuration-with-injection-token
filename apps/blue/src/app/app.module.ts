@@ -5,20 +5,17 @@ import {
 } from '@blog-configuration-with-injection-token/color';
 
 import { AppComponent } from './app.component';
-import { BlueOrderActionComponent } from './order-action/order-action.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-const getBluePrice = (price: number) => 0.95 * price;
 
 export const APP_CONFIG: ColorConfig = {
   productColor: 'blue',
   productGeneralConditions: 'www.blue-products.com',
-  getPrice: getBluePrice,
+  price: 2.5,
 };
 
 @NgModule({
-  declarations: [AppComponent, BlueOrderActionComponent],
+  declarations: [AppComponent],
   imports: [BrowserModule, InfoTagModule],
   providers: [{ provide: COLOR_CONFIG_TOKEN, useValue: APP_CONFIG }],
   bootstrap: [AppComponent],
