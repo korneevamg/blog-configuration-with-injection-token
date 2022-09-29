@@ -5,7 +5,6 @@ import {
 } from '@blog-configuration-with-injection-token/color';
 
 import { AppComponent } from './app.component';
-import { BlueOrderActionComponent } from './order-action/order-action.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -18,7 +17,7 @@ export const APP_CONFIG: ColorConfig = {
 };
 
 @NgModule({
-  declarations: [AppComponent, BlueOrderActionComponent],
+  declarations: [AppComponent],
   imports: [BrowserModule, InfoTagModule],
   providers: [{ provide: COLOR_CONFIG_TOKEN, useValue: APP_CONFIG }],
   bootstrap: [AppComponent],
