@@ -1,10 +1,12 @@
-import { Inject, Injectable } from '@angular/core';
-//import { Product } from './color.model';
+import { inject, Injectable } from '@angular/core';
 import { ColorConfig, COLOR_CONFIG_TOKEN } from './config';
 
 @Injectable()
 export class InfoService {
-  public constructor(@Inject(COLOR_CONFIG_TOKEN) private config: ColorConfig) {}
+  public config: ColorConfig;
+  public constructor() {
+    this.config = inject(COLOR_CONFIG_TOKEN);
+  }
 
   /* The straigtforward approach 
   public getProductInfo(product: Product) {
